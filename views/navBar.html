@@ -1,0 +1,25 @@
+<nav class="nav-bar-directive">
+
+  <!--hamburger menu button-->
+  <i class="fa fa-bars" aria-hidden="true"></i>
+
+  <!--myClassroom Logo-->
+  <div class="logo">myClassroom</div>
+
+  <!--navbar menu items-->
+  <ul class="navbar-center-menu-items">
+    <li ng-if="role === 'teacher'" ui-sref="#">Calendar</li>
+    <li ng-if="role === 'teacher'" ui-sref="#">Contacts</li>
+  </ul>
+
+  <ul class="navbar-right-menu-items">
+    <li><i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+    <li class="username-image">img</li>
+    <li class="username-display">dadleatherwood</li>
+    <li><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></li>
+    <li ng-hide="role === 'teacher'" ng-click="role = 'teacher'">Teacher</li>
+    <li ng-show="role === 'teacher'" ng-click="role = ''">Sign Out</li>
+
+  </ul>
+
+</nav>
