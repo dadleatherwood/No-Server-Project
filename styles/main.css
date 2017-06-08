@@ -61,6 +61,35 @@ form .btn {
   color:black;
 }
 
+.course-data {
+  list-style: none;
+  font-family: "Merriweather",serif;
+}
+.course-data a {
+  color: #5197D5;
+}
+
+.footer-info {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+#grade {
+  border: 2px solid red;
+  border-radius: 100%;
+
+}
+
+.class-card {
+  width: 25%;
+  margin-top: 5%;
+}
+.class-card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*Footer*/
 
 .fa.fa-twitter {

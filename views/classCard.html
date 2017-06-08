@@ -1,15 +1,30 @@
-<div class="container-fluid">
-  <div class="panel panel-default">
+<div class="class-card-container container-fluid">
+  <div ng-repeat="course in courses" class="panel panel-default class-card">
     <div class="panel-body">
-      <!-- <ul>
+      <ul class="course-data">
         <li><a ui-sref="studentClassPage">{{course.subject}}</a></li>
         <li>{{course.teacher}}</li>
-      </ul> -->
+        <li>
+          <ul class="assignments">
+            <li ng-repeat="assignment in course.assignments">
+              <div ng-click="show = !show">
+                {{assignment.assignment_name}}
+              </div>
+              <div ng-show="show">
+                {{assignment.info}}
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
     <div class="panel-footer">
-      <i class="fa fa-folder-open-o" aria-hidden="true"></i>
-      <i class="fa fa-comment-o" aria-hidden="true"></i>
-      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      <ul class="footer-info">
+        <li><i class="fa fa-folder-open-o"  aria-hidden="true"></i></li>
+        <li><i class="fa fa-comment-o"  aria-hidden="true"></i></li>
+        <li><i class="fa fa-envelope-o"  aria-hidden="true"></i></li>
+        <li id="grade">{{course.grade}}</li>
+      </ul>
     </div>
   </div>
 </div>
