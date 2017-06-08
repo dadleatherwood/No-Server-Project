@@ -25,24 +25,33 @@ angular.module('myApp').service('myAppSrv',function($http){
     })
   }
 
-  this.findUserId = function(user, role) {
+  this.findUser = function(user, role) {
     if (role === 'teacher') {
       var teacher = this.teachers.find(function(element){
         return element.first_name === user.first_name && element.last_name === user.last_name
       })
-      return teacher.teacher_id;
+      return teacher;
     } else if (role === 'student') {
       var student = this.students.find(function(element){
         return element.first_name === user.first_name && element.last_name === user.last_name
       })
-      return student.student_id
+      return student
     }
   }
 
   this.findStudentById = function(id){
-    return this.students.find(function(element){
+    var student = this.students.find(function(element){
       return element.student_id === id
     })
+    return student
+
+  }
+
+  this.findClass = function(class_id){
+    var course = this.classes.find(function(element){
+      return element.class_id === class_id
+    })
+    return course
   }
 
   this.getStudentData()

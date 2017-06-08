@@ -28,6 +28,11 @@ angular.module('myApp',['ui.router'])
       templateUrl: 'views/teacher-dashboard.html'
     })
 
+    .state('studentClassPage', {
+      url: '/studentCourse/:id',
+      templateUrl: "views/student-classpage.html"
+    })
+
 
 
 

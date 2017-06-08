@@ -4,15 +4,22 @@ angular.module('myApp').directive('navBar', function(){
     restrict: 'E',
     scope: {
       role: '=',
-      loggedIn: '='
+      loggedIn: '=',
+      username: '='
     },
-    controller: function($scope, myAppSrv){
+    controller: function($scope, myAppSrv,$state){
       $scope.role = 'none'
       $scope.changeRole = function(role) {
         $scope.role = role;
         $scope.loggingIn = true;
-
+      }
+      $scope.signOut = function(){
+        $scope.role = ""
+        $scope.loggedIn = false
+        $scope.loggingIn = false
+        $state.go('home')
       }
     }
+
   }
 })

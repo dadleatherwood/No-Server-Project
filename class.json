@@ -39,20 +39,20 @@
   ]
 },
 {
-  "class_id": 1,
+  "class_id": 2,
   "subject": "Science",
   "teacher": "Mr. Tenant",
   "topics": [
     {
-      "id": 0,
+      "id": 1,
       "topic_name": "Fractions"
     },
     {
-      "id": 1,
+      "id": 2,
       "topic_name": "Decimals"
     },
     {
-      "id": 2,
+      "id": 3,
       "topic_name": "Percents"
     }
 
@@ -79,20 +79,20 @@
   ]
 },
 {
-  "class_id": 2,
+  "class_id": 3,
   "subject": "ILA",
   "teacher": "Mrs. Terrell",
   "topics": [
     {
-      "id": 0,
+      "id": 1,
       "topic_name": "Fractions"
     },
     {
-      "id": 1,
+      "id": 2,
       "topic_name": "Decimals"
     },
     {
-      "id": 2,
+      "id": 3,
       "topic_name": "Percents"
     }
 

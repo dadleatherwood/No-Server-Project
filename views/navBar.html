@@ -1,26 +1,33 @@
-  <div class="container-fluid">
-    <!--LOGIN HEADER-->
-    <nav ng-hide="loggedIn" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">myClassroom</a>
-      </div>
-      <div ng-hide="loggingIn" class="navbar navbar-nav navbar-right">
-        <button ng-click="changeRole('teacher')" type="button" class="btn btn-success navbar-btn">Teacher</button>
-        <button ng-click="changeRole('student')" type="button" class="btn btn-info navbar-btn" id="student-button">Student</button>
-      </div>
-    </nav>
+<div class="container-fluid">
+  <!--LOGIN HEADER-->
+  <nav ng-hide="loggedIn" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">myClassroom</a>
+    </div>
+    <div ng-hide="loggingIn" class="navbar navbar-nav navbar-right">
+      <button ng-click="changeRole('teacher')" type="button" class="btn btn-success navbar-btn">Teacher</button>
+      <button ng-click="changeRole('student')" type="button" class="btn btn-info navbar-btn" id="student-button">Student</button>
+    </div>
+  </nav>
 
-    <!--USER PAGE HEADER-->
-    <nav ng-show="loggedIn" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">myClassroom</a>
-      </div>
-      <div class="navbar navbar-nav navbar-right">
+  <!--USER PAGE HEADER-->
+  <nav ng-show="loggedIn" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">myClassroom</a>
+    </div>
+    <div class="navbar navbar-nav navbar-right dropdown">
+
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-        <span>{{student.first_name}} {{student.last_name}}</span>
-        <button ng-click="role === 'none'" type="button" class="btn btn-danger navbar-btn" id="sign-out-button">Sign Out</button>
-      </div>
-    </nav>
+        </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+        <li><a href="#">Join Class</a></li>
+      </ul>
 
-  </div>
+      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+      <span class="username">{{username}}</span>
+      <button ng-click="signOut()" type="button" class="btn btn-danger navbar-btn" id="sign-out-button">Sign Out</button>
+    </div>
+  </nav>
+
+</div>

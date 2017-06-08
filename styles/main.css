@@ -11,7 +11,11 @@
 #student-button {
   margin-right: 2em;
 }
-
+#dropdownMenu {
+  background-color: #222222;
+  border: none;
+  margin: 0 auto;
+}
 .glyphicon-plus {
   font-size: 12px;
   color: white;
@@ -29,6 +33,10 @@
 
 .ui-view {
   margin-top: 55px;
+}
+
+.username {
+  color: white;
 }
 
 /*Login Form*/
@@ -49,7 +57,9 @@ form .btn {
 }
 
 /*Class Cards*/
-
+.fa.fa-folder.open-o {
+  color:black;
+}
 
 /*Footer*/
 
