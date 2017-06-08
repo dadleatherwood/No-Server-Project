@@ -65,8 +65,9 @@ form .btn {
   list-style: none;
   font-family: "Merriweather",serif;
 }
-.course-data a {
-  color: #5197D5;
+
+#due-soon {
+  border-bottom: 1px solid black;
 }
 
 .footer-info {
@@ -75,9 +76,30 @@ form .btn {
   justify-content: space-around;
 }
 
+.course-data a {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+
+.class-details{
+  background-color: #D9EDF7;
+}
+.assignments {
+  margin-left: 10px;
+  list-style: none;
+}
+
+.assignment-details {
+  margin-left: 20px;
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 10px;
+}
 #grade {
   border: 2px solid red;
-  border-radius: 100%;
+  border-radius: 10px;
+  padding: 5px;
 
 }
 
