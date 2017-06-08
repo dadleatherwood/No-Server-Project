@@ -11,7 +11,11 @@
                 {{assignment.assignment_name}}
               </div>
               <div ng-show="show">
-                {{assignment.info}}
+                <ul>
+                  <li>{{assignment.info}}</li>
+                  <li>{{assignment.due_date}}</li>
+                  <li ng-repeat="attachment in attachments">{{attachment}}</li>
+                </ul>
               </div>
             </li>
           </ul>
