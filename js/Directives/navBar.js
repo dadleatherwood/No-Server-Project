@@ -3,7 +3,16 @@ angular.module('myApp').directive('navBar', function(){
     templateUrl: "views/navBar.html",
     restrict: 'E',
     scope: {
-      role: '='
+      role: '=',
+      loggedIn: '='
+    },
+    controller: function($scope, myAppSrv){
+      $scope.role = 'none'
+      $scope.changeRole = function(role) {
+        $scope.role = role;
+        $scope.loggingIn = true;
+
+      }
     }
   }
 })

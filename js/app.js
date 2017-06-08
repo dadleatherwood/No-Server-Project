@@ -9,23 +9,26 @@ angular.module('myApp',['ui.router'])
 
     .state('home', {
       url: '/',
-      template: '<div><h1>Test</h1></div>'
+      templateUrl: 'views/login-form.html'
     })
 
-    // .state('teacherSignUp', {
-    //   url: '/teacherSignUp',
-    //   templateUrl:  'views/teacher-signup.html'
+    // .state('login', {
+    //   url: '/login',
+    //   templateUrl: 'views/login-form.html',
+    //   controller: 'loginController'
     // })
-    //
-    // .state ('studentSignUp', {
-    //   url: '/studentSignUp',
-    //   templateUrl: 'views/student-signup.html'
-    // })
-    //
-    // .state ('parentSignUp', {
-    //   url: '/parentSignUp',
-    //   templateUrl: 'views/parent-signup.html'
-    // })
+    .state('student', {
+      url: '/student/:id',
+      templateUrl: 'views/student-dashboard.html',
+      controller: 'studentCtrl'
+    })
+
+    .state('teacher', {
+      url: '/teacher/:id',
+      templateUrl: 'views/teacher-dashboard.html'
+    })
+
+
 
 
 })

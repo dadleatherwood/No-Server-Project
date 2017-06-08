@@ -1,25 +1,26 @@
-<nav class="nav-bar-directive">
+  <div class="container-fluid">
+    <!--LOGIN HEADER-->
+    <nav ng-hide="loggedIn" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">myClassroom</a>
+      </div>
+      <div ng-hide="loggingIn" class="navbar navbar-nav navbar-right">
+        <button ng-click="changeRole('teacher')" type="button" class="btn btn-success navbar-btn">Teacher</button>
+        <button ng-click="changeRole('student')" type="button" class="btn btn-info navbar-btn" id="student-button">Student</button>
+      </div>
+    </nav>
 
-  <!--hamburger menu button-->
-  <i class="fa fa-bars" aria-hidden="true"></i>
+    <!--USER PAGE HEADER-->
+    <nav ng-show="loggedIn" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">myClassroom</a>
+      </div>
+      <div class="navbar navbar-nav navbar-right">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <span>{{student.first_name}} {{student.last_name}}</span>
+        <button ng-click="role === 'none'" type="button" class="btn btn-danger navbar-btn" id="sign-out-button">Sign Out</button>
+      </div>
+    </nav>
 
-  <!--myClassroom Logo-->
-  <div class="logo">myClassroom</div>
-
-  <!--navbar menu items-->
-  <ul class="navbar-center-menu-items">
-    <li ng-if="role === 'teacher'" ui-sref="#">Calendar</li>
-    <li ng-if="role === 'teacher'" ui-sref="#">Contacts</li>
-  </ul>
-
-  <ul class="navbar-right-menu-items">
-    <li><i class="fa fa-plus-circle" aria-hidden="true"></i></li>
-    <li class="username-image">img</li>
-    <li class="username-display">dadleatherwood</li>
-    <li><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></li>
-    <li ng-hide="role === 'teacher'" ng-click="role = 'teacher'">Teacher</li>
-    <li ng-show="role === 'teacher'" ng-click="role = ''">Sign Out</li>
-
-  </ul>
-
-</nav>
+  </div>

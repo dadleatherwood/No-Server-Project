@@ -1,0 +1,21 @@
+[
+  {
+    "student_id": 1,
+    "first_name": "Steven",
+    "last_name": "Longoria",
+    "classes": [
+      {
+        "class_id": 1,
+        "grade": 98
+      },
+      {
+        "class_id": 2,
+        "grade": 75
+      },
+      {
+        "class_id": 3,
+        "grade": 85
+      }
+    ]
+  }
+]

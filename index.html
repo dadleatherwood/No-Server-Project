@@ -21,26 +21,27 @@
     <header>
 
       <!--nav bar directive so it can change dependent on the page-->
-      <nav-bar role="role"></nav-bar>
+      <nav-bar role="role" logged-in="loggedIn"></nav-bar>
 
     </header>
 
 
     <!--insert ui content here-->
+    <div class="ui-view">
+      <ui-view></ui-view>
+    </div>
 
-    <ui-view></ui-view>
 
-    <!--footer to stay throughout the site-->
-
-    <footer>
-      <div>
+    <!--FOOTER-->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Developed By: Jacob Leatherwood</a>
+      </div>
+      <div class="navbar navbar-nav navbar-right">
         <i class="fa fa-twitter" aria-hidden="true"></i>
         <i class="fa fa-github" aria-hidden="true"></i>
         <i class="fa fa-linkedin" aria-hidden="true"></i>
-        <p>Developed By: Jacob Leatherwood</p>
       </div>
-
-    </footer>
 
   </main>
 
@@ -54,6 +55,7 @@
   <script src="js/Services/myAppSrv.js"></script>
   <script src="js/Directives/navBar.js"></script>
   <script src="js/Directives/classCard.js"></script>
+  <script src="js/Controllers/studentCtrl.js" charset="utf-8"></script>
 
 </body>
 
