@@ -9,13 +9,14 @@ angular.module('myApp',['ui.router'])
 
     .state('home', {
       url: '/',
-      templateUrl: 'views/login-form.html'
+      templateUrl: 'views/home.html'
     })
 
-    // .state('login', {
-    //   url: '/login',
-    //   templateUrl: 'views/login-form.html',
-    // })
+    .state('login', {
+      url: '/login',
+      templateUrl: 'views/login-form.html',
+    })
+
     .state('student', {
       url: '/student/:id',
       templateUrl: 'views/student-dashboard.html',
@@ -34,7 +35,7 @@ angular.module('myApp',['ui.router'])
       controller: 'courseCtrl'
     })
 
-    
+
 
 
 

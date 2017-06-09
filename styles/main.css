@@ -39,6 +39,12 @@
   color: white;
 }
 
+/*Home Page*/
+
+.home {
+  background: url("img/classroom_hero_img_desktop.jpg");
+}
+
 /*Login Form*/
 .login {
   width: 30%;

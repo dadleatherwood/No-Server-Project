@@ -5,8 +5,8 @@
       <a class="navbar-brand" href="#">myClassroom</a>
     </div>
     <div ng-hide="loggingIn" class="navbar navbar-nav navbar-right">
-      <button ng-click="changeRole('teacher')" type="button" class="btn btn-success navbar-btn">Teacher</button>
-      <button ng-click="changeRole('student')" type="button" class="btn btn-info navbar-btn" id="student-button">Student</button>
+      <button ui-sref="login" ng-click="changeRole('teacher')" type="button" class="btn btn-success navbar-btn">Teacher</button>
+      <button ui-sref="login" ng-click="changeRole('student')" type="button" class="btn btn-info navbar-btn" id="student-button">Student</button>
     </div>
   </nav>
 
