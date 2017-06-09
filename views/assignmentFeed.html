@@ -1,5 +1,5 @@
 <div class="assignment-feed-container container-fluid">
-  <div ng-repeat="assignment in course.assignments" class="panel panel-default assignment-feed-card">
+  <div ng-repeat="assignment in assignments | filter: {assignment_name: assignmentFilter}" class="panel panel-default assignment-feed-card">
     <div class="panel-heading">
       Assignment: {{assignment.assignment_name}}
     </div>
