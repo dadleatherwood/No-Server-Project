@@ -31,13 +31,13 @@ angular.module('myApp',['ui.router'])
     .state('studentClassPage', {
       url: '/studentCourse/:id',
       templateUrl: "views/student-classpage.html",
-      controller: 'studentCtrl'
+      controller: 'courseCtrl'
     })
 
     .state('teacherClassPage', {
       url: '/teacherCourse/:id',
       templateUrl: "views/teacher-classpage.html",
-      controller: 'teacherCtrl'
+      controller: 'courseCtrl'
     })
 
 

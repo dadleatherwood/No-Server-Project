@@ -2,7 +2,7 @@
   <div ng-repeat="course in courses" class="panel panel-default class-card">
     <div class="panel-body">
       <ul class="course-data">
-        <li class="class-details"><a ui-sref="studentClassPage">{{course.subject}}</a></li>
+        <li class="class-details"><a ui-sref="studentClassPage({id:course.class_id})">{{course.subject}}</a></li>
         <li class="class-details">{{course.teacher}}</li>
         <li>
           <br />
@@ -10,7 +10,7 @@
           <ul class="assignments">
             <li ng-repeat="assignment in course.assignments">
               <div class="assignment-on-card" ng-click="show = !show">
-                {{assignment.assignment_name}} Due: {{assignment.due_date | date:"EEE"}}
+                {{assignment.assignment_name}} Due: {{assignment.due_date | date:"EEE, MM/dd"}}
               </div>
               <div ng-show="show">
                 <ul class="assignment-details">

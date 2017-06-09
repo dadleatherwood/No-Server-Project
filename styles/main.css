@@ -82,9 +82,6 @@ form .btn {
   font-size: 35px;
 }
 
-.class-details{
-  background-color: #D9EDF7;
-}
 .assignments {
   margin-left: 10px;
   list-style: none;
@@ -103,7 +100,7 @@ form .btn {
 }
 
 .class-on-card {
-  background-color: 
+  background-color:
 }
 
 .class-card {
@@ -114,6 +111,33 @@ form .btn {
   display: flex;
   justify-content: space-between;
 }
+
+.class-card .panel-body {
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.class-card .panel-heading {
+  font-family: "Merriweather",serif;
+  font-size: 36px;
+}
+
+/*.class-card:nth-child(3n + 1) .panel-heading{
+  background: hsl(210, 60%, 40%);
+}
+
+.class-card:nth-child(3n + 1) .panel-body{
+  background: hsl(210, 60%, 80%);
+}
+
+.class-card:nth-child(3n + 2) .panel-heading{
+  background: hsl(0, 60%, 40%);
+}
+
+.class-card:nth-child(3n + 2) .panel-body{
+  background: hsl(0, 60%, 80%);
+}*/
+
 
 /*Footer*/
 
