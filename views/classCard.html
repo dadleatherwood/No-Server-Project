@@ -1,11 +1,10 @@
 <div class="class-card-container container-fluid">
   <div ng-repeat="course in courses" class="panel panel-default class-card">
+    <div class="panel-heading">
+      <a ui-sref="studentClassPage({id:course.class_id})">{{course.subject}}</a>
+    </div>
     <div class="panel-body">
       <ul class="course-data">
-        <li class="class-details"><a ui-sref="studentClassPage({id:course.class_id})">{{course.subject}}</a></li>
-        <li class="class-details">{{course.teacher}}</li>
-        <li>
-          <br />
           <p id="due-soon">Due Soon</p>
           <ul class="assignments">
             <li ng-repeat="assignment in course.assignments">

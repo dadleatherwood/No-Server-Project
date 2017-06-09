@@ -1,10 +1,11 @@
 <div class="class-card-container container-fluid">
   <div ng-repeat="course in courses" class="panel panel-default class-card">
     <div class="panel-heading">
-      <a ui-sref="teacherClassPage">{{course.subject}}</a>
+      <a ui-sref="teacherClassPage({id:course.class_id})">{{course.subject}}</a>
     </div>
     <div class="panel-body">
         <ul class="course-data assignments">
+          <p id="due-soon">Due Soon</p>
           <li ng-repeat="assignment in course.assignments">
             <div class="assignment-on-card" ng-click="show = !show">
               {{assignment.assignment_name}} Due: {{assignment.due_date | date:"EEE, MM/dd"}}
