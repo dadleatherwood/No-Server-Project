@@ -44,7 +44,13 @@ angular.module('myApp').service('myAppSrv',function($http){
       return element.student_id === id
     })
     return student
+  }
 
+  this.findTeacherById = function(id){
+    var teacher = this.teachers.find(function(element){
+      return element.teacher_id === id
+    })
+    return teacher
   }
 
   this.findClass = function(class_id){

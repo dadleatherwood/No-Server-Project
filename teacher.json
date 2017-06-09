@@ -4,21 +4,36 @@
     "teacher_name": "Mr. Leatherwood",
     "first_name": "Jacob",
     "last_name": "Leatherwood",
-     "class_id": 1
+    "classes": [
+      {
+        "class_id": 1
+      },
+      {
+        "class_id": 4
+      }
+    ]
+
   },
   {
     "teacher_id": 2,
     "teacher_name": "Mrs. Tenent",
     "first_name": "Kelli",
     "last_name": "Tenent",
-     "class_id": 2
-
+    "classes": [
+      {
+        "class_id": 2
+      }
+    ]
   },
   {
     "teacher_id": 3,
     "teacher_name": "Mrs. Terrell",
     "first_name": "Haley",
     "last_name": "Terrell",
-     "class_id": 3
+    "classes": [
+      {
+        "class_id": 3
+      }
+    ]
   }
 ]

@@ -21,19 +21,19 @@
     {
       "assignment_name": "Fractions 1",
       "info": "Watch the attached video, and take notes on the material",
-      "due_date": "Thu Jun 09 2017 10:03:38 GMT-0500 (CDT)",
+      "due_date": "2016-01-05T09:05:05.035Z",
       "attachments": []
     },
     {
       "assignment_name": "Fractions 2",
       "info": "Complete the ten questions assigned",
-      "due_date": "Thu Jun 10 2017 10:03:38 GMT-0500 (CDT)",
+      "due_date": "2016-01-05T09:05:05.035Z",
       "attachments": []
     },
     {
       "assignment_name": "Fractions 3",
       "info": "Take the online quiz to show your understanding of the material",
-      "due_date": "Thu Jun 12 2017 10:03:38 GMT-0500 (CDT)",
+      "due_date": "2016-01-05T09:05:05.035Z",
       "attachments": []
     }
   ]
@@ -61,19 +61,19 @@
     {
       "assignment_name": "Mitosis 1",
       "info": "Split something in half",
-      "due_date": "Thu Jun 09 2017 10:03:38 GMT-0500 (CDT)",
+      "due_date": "2016-01-05T09:05:05.035Z",
       "attachments": []
     },
     {
       "assignment_name": "Cells",
       "info": "What are some differences between plant and animal cells?",
-      "due_date": "Thu Jun 11 2017 10:03:38 GMT-0500 (CDT)",
+      "due_date": "2016-01-05T09:05:05.035Z",
       "attachments": []
     },
     {
       "assignment_name": "Organisms",
       "info": "Take the 5 question quiz on organisms",
-      "due_date": "Thu Jun 13 2017 10:03:38 GMT-0500 (CDT)",
+      "due_date": "2016-01-05T09:05:05.035Z",
       "attachments": []
     }
   ]
@@ -101,19 +101,59 @@
     {
       "assignment_name": "Reading 1",
       "info": "Read for 30 minutes each night, and complete your reading log",
-      "due_date": "Thu Jun 13 2017 10:03:38 GMT-0500 (CDT)",
+      "due_date": "2016-01-05T09:05:05.035Z",
       "attachments": []
     },
     {
       "assignment_name": "Writing 1",
       "info": "Write a short story on a fictional character you created",
-      "due_date": "Thu Jun 15 2017 10:03:38 GMT-0500 (CDT)",
+      "due_date": "2016-01-05T09:05:05.035Z",
       "attachments": []
     },
     {
       "assignment_name": "Writing 2",
       "info": "Write about a significant event in your life",
-      "due_date": "Thu Jun 18 2017 10:03:38 GMT-0500 (CDT)",
+      "due_date": "2016-01-05T09:05:05.035Z",
+      "attachments": []
+    }
+  ]
+},
+{
+  "class_id": 4,
+  "subject": "Pre-AP Math",
+  "teacher": "Mr. Leatherwood",
+  "topics": [
+    {
+      "id": 1,
+      "topic_name": "Advanced Fractions"
+    },
+    {
+      "id": 2,
+      "topic_name": "Advanced Decimals"
+    },
+    {
+      "id": 3,
+      "topic_name": "Advanced Percents"
+    }
+
+  ],
+  "assignments": [
+    {
+      "assignment_name": "Advanced Fractions 1",
+      "info": "Watch the attached video, and take notes on the material",
+      "due_date": "2016-01-05T09:05:05.035Z",
+      "attachments": []
+    },
+    {
+      "assignment_name": "Advanced Fractions 2",
+      "info": "Complete the ten questions assigned",
+      "due_date": "2016-01-05T09:05:05.035Z",
+      "attachments": []
+    },
+    {
+      "assignment_name": "Advanced Fractions 3",
+      "info": "Take the online quiz to show your understanding of the material",
+      "due_date": "2016-01-05T09:05:05.035Z",
       "attachments": []
     }
   ]

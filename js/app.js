@@ -25,7 +25,8 @@ angular.module('myApp',['ui.router'])
 
     .state('teacher', {
       url: '/teacher/:id',
-      templateUrl: 'views/teacher-dashboard.html'
+      templateUrl: 'views/teacher-dashboard.html',
+      controller: 'teacherCtrl'
     })
 
     .state('studentClassPage', {

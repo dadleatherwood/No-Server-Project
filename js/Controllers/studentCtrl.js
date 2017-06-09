@@ -13,6 +13,4 @@ angular.module('myApp').controller('studentCtrl', function($scope,$stateParams,m
     foundCourse.grade = course.grade
     $scope.courses.push(foundCourse)
   }
-
-  console.log($scope.courses)
 })
