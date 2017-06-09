@@ -28,17 +28,17 @@ angular.module('myApp',['ui.router'])
       controller: 'teacherCtrl'
     })
 
-    .state('studentClassPage', {
-      url: '/studentCourse/:id',
-      templateUrl: "views/student-classpage.html",
+    .state('classPage', {
+      url: '/course/:id',
+      templateUrl: "views/classpage.html",
       controller: 'courseCtrl'
     })
 
-    .state('teacherClassPage', {
-      url: '/teacherCourse/:id',
-      templateUrl: "views/teacher-classpage.html",
-      controller: 'courseCtrl'
-    })
+    // .state('teacherClassPage', {
+    //   url: '/teacherCourse/:id',
+    //   templateUrl: "views/classpage.html",
+    //   controller: 'courseCtrl'
+    // })
 
 
 

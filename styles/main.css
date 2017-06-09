@@ -117,11 +117,14 @@ form .btn {
   overflow-y: scroll;
 }
 
-.class-card .panel-heading {
+.panel-heading {
   font-family: "Merriweather",serif;
   font-size: 36px;
 }
-
+.comment {
+  width: 390%;
+  border: none;
+}
 /*.class-card:nth-child(3n + 1) .panel-heading{
   background: hsl(210, 60%, 40%);
 }
@@ -137,6 +140,18 @@ form .btn {
 .class-card:nth-child(3n + 2) .panel-body{
   background: hsl(0, 60%, 80%);
 }*/
+
+.topics {
+  list-style: none;
+}
+
+.assignment-list {
+  list-style: none;
+}
+
+.form-control {
+
+}
 
 
 /*Footer*/

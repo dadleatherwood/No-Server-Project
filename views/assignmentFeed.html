@@ -1,0 +1,42 @@
+<div class="assignment-feed-container container-fluid">
+  <div ng-repeat="assignment in course.assignments" class="panel panel-default assignment-feed-card">
+    <div class="panel-heading">
+      Assignment: {{assignment.assignment_name}}
+    </div>
+    <div class="panel-body">
+      <div class="assignment-feed-on-card" ng-click="show = !show">
+        <ul class="assignment-list">
+          <li>{{assignment.info}}</li>
+          <li>Due:  {{assignment.due_date | date:"EEE, MM/dd"}}</li>
+          <li ng-show="assignment.attachments.length">{{assignment.attachments}}</li>
+        </ul>
+      </div>
+      </li>
+      </ul>
+    </div>
+    <div class="panel-footer">
+      <ul class="footer-info">
+        <li>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Add a Comment <span class="caret"></span>
+            </button>
+              <ul class="comment dropdown-menu">
+                <li>
+                  <!-- <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1"></span> -->
+                  <input type="text" class="form-control" placeholder="Write Your Comment Here" aria-describedby="basic-addon1">
+                  <!-- </div> -->
+                </li>
+              </ul>
+        </li>
+        <li><i class="fa fa-folder-open-o"  aria-hidden="true"></i></li>
+        <li><i class="fa fa-comment-o"  aria-hidden="true"></i></li>
+        <li><i class="fa fa-envelope-o"  aria-hidden="true"></i></li>
+      </ul>
+      </div>
+
+
+    </div>
+  </div>
+</div>
