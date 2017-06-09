@@ -8,6 +8,13 @@ angular.module('myApp').directive('navBar', function(){
       username: '='
     },
     controller: function($scope, myAppSrv,$state){
+      angular.element(document).ready(function(){
+        $('.dropdown-toggle').dropdown()
+
+
+      })
+
+
       $scope.role = 'none'
       $scope.changeRole = function(role) {
         $scope.role = role;

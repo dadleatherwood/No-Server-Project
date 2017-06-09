@@ -9,13 +9,13 @@
           <p id="due-soon">Due Soon</p>
           <ul class="assignments">
             <li ng-repeat="assignment in course.assignments">
-              <div ng-click="show = !show">
-                {{assignment.assignment_name}}
+              <div class="assignment-on-card" ng-click="show = !show">
+                {{assignment.assignment_name}} Due: {{assignment.due_date | date:"EEE"}}
               </div>
               <div ng-show="show">
                 <ul class="assignment-details">
                   <li>{{assignment.info}}</li>
-                  <li>{{assignment.due_date | date}}</li>
+                  <li>Due : {{assignment.due_date | date}}</li>
                   <li ng-repeat="attachment in attachments">{{attachment}}</li>
                 </ul>
               </div>
