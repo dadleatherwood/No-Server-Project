@@ -7,5 +7,4 @@ angular.module('myApp').controller('teacherCtrl',function($scope, $stateParams,m
     var foundTeacherCourse = myAppSrv.findClass(course.class_id)
     $scope.courses.push(foundTeacherCourse)
   }
-  console.log($scope.courses)
 })

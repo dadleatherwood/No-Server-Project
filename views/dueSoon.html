@@ -1,0 +1,13 @@
+<div class="due-soon-card-conatiner container-fluid">
+  <div ng-repeat="course in courses" class="panel panel-default due-soon-card">
+    <div class="panel-body">
+      <ul class="due-soon-data">
+        <li ng-repeat="assignment in course.assignments">
+          <div class="assignment-on-card" ng-click="show = !show">
+            {{assignment.assignment_name}} Due:  {{assignment.due_date}} | date:"EEE"}}
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
