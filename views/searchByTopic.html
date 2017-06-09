@@ -1,0 +1,13 @@
+<div class="search-by-topic-conatiner container-fluid">
+  <div class="panel panel-default search-by-topic-card">
+    <div class="panel-body">
+      <ul class="search-by-topic-data topics">
+        <li ng-repeat="topic in course.topics">
+          <div class="topic-on-card" ng-click="show = !show">
+            {{topic.topic_name}} 
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
