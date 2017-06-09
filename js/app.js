@@ -9,7 +9,7 @@ angular.module('myApp',['ui.router'])
 
     .state('home', {
       url: '/',
-      templateUrl: 'views/home.html'
+      templateUrl: 'views/splash.html'
     })
 
     .state('login', {
