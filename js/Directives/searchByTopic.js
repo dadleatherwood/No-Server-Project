@@ -5,6 +5,15 @@ angular.module('myApp').directive('searchByTopic', function(){
     scope: {
       topics: "=",
       topicFilter: "="
+    },
+    controller: function($scope) {
+      $scope.changeFilter = function(filter) {
+        if ($scope.topicFilter === filter) {
+          $scope.topicFilter = ""
+        } else {
+          $scope.topicFilter = filter;
+        }
+      }
     }
   }
 })

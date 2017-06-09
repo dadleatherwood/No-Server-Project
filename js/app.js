@@ -34,11 +34,7 @@ angular.module('myApp',['ui.router'])
       controller: 'courseCtrl'
     })
 
-    // .state('teacherClassPage', {
-    //   url: '/teacherCourse/:id',
-    //   templateUrl: "views/classpage.html",
-    //   controller: 'courseCtrl'
-    // })
+    
 
 
 

@@ -6,7 +6,7 @@
     <div class="panel-body">
       <ul class="search-by-topic-data topics">
         <li ng-repeat="topic in topics">
-          <div class="topic-on-card" ng-click="show = !show">
+          <div class="topic-on-card" ng-click="changeFilter(topic.topic_name)">
             {{topic.topic_name}}
           </div>
         </li>
