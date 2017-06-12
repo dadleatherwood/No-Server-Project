@@ -1,14 +1,16 @@
-<div ng-show="role === 'student'" class="login panel panel-info">
-  <div class="panel-heading">Student Login</div>
-  <div class="panel-body">
-    <form ng-submit="login(student)">
-      <input type="text" class="form-control" ng-model="student.first_name" placeholder="First Name" />
-      <input type="text" class="form-control" ng-model="student.last_name" placeholder="Last Name" />
-      <input ng-click="loggedIn = !loggedIn" class="btn btn-info" type="submit" value="Login" />
-    </form>
+
+  <div ng-show="role === 'student'" class="login panel panel-info">
+    <div class="panel-heading">Student Login</div>
+    <div class="panel-body">
+      <form ng-submit="login(student)">
+        <input type="text" class="form-control" ng-model="student.first_name" placeholder="First Name" />
+        <input type="text" class="form-control" ng-model="student.last_name" placeholder="Last Name" />
+        <input ng-click="loggedIn = !loggedIn" class="btn btn-info" type="submit" value="Login" />
+      </form>
+    </div>
+    <div class="panel-footer"></div>
   </div>
-  <div class="panel-footer"></div>
-</div>
+
 
 <div ng-show="role === 'teacher'"class="login panel panel-success">
   <div class="panel-heading">Teacher Login</div>

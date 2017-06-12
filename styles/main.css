@@ -61,9 +61,11 @@
 
 .welcome h1 {
   font-size: 42px;
+  color: #31B0D5;
 }
 
 /*Login Form*/
+
 .login {
   width: 30%;
   height: 80%;
@@ -183,6 +185,43 @@ form .btn {
   margin-top: 125px;
 }
 
+#gradebook {
+  background-color: hsl(0, 0%, 56%);
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+/*Fixed Buttons*/
+
+.fixed-button {
+  font-size: 56px;
+  color: #31B0D5;
+  position:fixed;
+  bottom: 7.75%;
+  right: 4%;
+  z-index: 10;
+}
+
+.teacher-button-list {
+  list-style: none;
+}
+
+.button-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #fff;
+  background: #31B0D5;
+  box-shadow: 3px 3px hsla(0, 0%, 0%, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .74em;
+  padding-bottom: 3px;
+}
+
 
 
 
@@ -248,5 +287,13 @@ footer.footer a:hover {
     font-size: .9em;
   }
 
+  .panel-heading{
+    font-size: 28px;
+  }
+
+  .login {
+    width: 80%;
+    margin-top: 50%;
+  }
 
 }
