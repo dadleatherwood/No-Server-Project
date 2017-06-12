@@ -2,11 +2,26 @@
   <!--LOGIN HEADER-->
   <nav ng-hide="loggedIn" class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a class="navbar-brand" href="#">myClassroom</a>
     </div>
-    <div ng-hide="loggingIn" class="navbar navbar-nav navbar-right">
-      <button ui-sref="login" ng-click="changeRole('teacher')" type="button" class="btn btn-success navbar-btn">Teacher</button>
-      <button ui-sref="login" ng-click="changeRole('student')" type="button" class="btn btn-info navbar-btn" id="student-button">Student</button>
+    <div ng-hide="loggingIn" class="navbar navbar-nav navbar-right collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <button ui-sref="login" ng-click="changeRole('teacher')" type="button" class="btn btn-success navbar-btn">Teacher</button>
+        </li>
+        <li>
+          <button ui-sref="login" ng-click="changeRole('student')" type="button" class="btn btn-info navbar-btn" id="student-button">Student</button>
+        </li>
+      </ul>
+
+
     </div>
   </nav>
 
