@@ -39,18 +39,19 @@
   color: white;
 }
 
+
 /*Splash Page*/
 
 .splash {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background: url("https://www.mountainviewfamilymed.com/wp-content/uploads/sites/46/2016/03/mountainview-top-masthead.jpg");
   background-size: cover;
 }
 
 .welcome-container{
   text-align: center;
-  margin: 30vh auto;
+  margin: 35vh auto;
   max-width: 600px;
 }
 
@@ -173,7 +174,7 @@ form .btn {
   background: #F2DEDE;
 }*/
 
-.topics {
+.topic-on-card {
   list-style: none;
 }
 
