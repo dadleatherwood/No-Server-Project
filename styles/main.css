@@ -32,7 +32,7 @@
 }
 
 .ui-view {
-  margin-top: 55px;
+  margin-top: 53px;
 }
 
 .username {
@@ -161,6 +161,11 @@ form .btn {
 .form-control {
 
 }
+
+.classpage-main {
+  margin-top: 125px;
+}
+
 
 
 /*Footer*/
