@@ -2,8 +2,8 @@
   {
     "teacher_id": 1,
     "teacher_name": "Mr. Leatherwood",
-    "first_name": "Jacob",
-    "last_name": "Leatherwood",
+    "first_name": "Imma",
+    "last_name": "Teacher",
     "classes": [
       {
         "class_id": 1
