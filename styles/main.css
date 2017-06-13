@@ -128,10 +128,6 @@ form .btn {
   padding: 5px;
 }
 
-.class-on-card {
-  background-color:
-}
-
 .class-card {
   width: 30%;
   margin-top: 5%;
@@ -139,6 +135,7 @@ form .btn {
 .class-card-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10%;
 }
 
 .class-card .panel-body {
@@ -184,6 +181,7 @@ form .btn {
 
 .classpage-main {
   margin-top: 125px;
+  margin-bottom: 125px;
 }
 
 #gradebook {
